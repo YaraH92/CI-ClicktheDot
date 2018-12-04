@@ -16,7 +16,7 @@ pipeline{
 		//build the app gradle
 		stage ('Build'){
 			steps{
-				powershell './gradlew assembleDebug'
+				"gradlew assembleDebug"
 			}
 		}
 	    
