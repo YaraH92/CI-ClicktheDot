@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Click the Dot</string>
+    <string name="UN">UserName</string>
+    <string name="pass">Password</string>
+    <string name="login">LogIn</string>
+    <string name="hello">Hello,</string>
+    <string name="Play">Play New Game</string>
+    <string name="Rec">Records</string>
+    <string name="signup">Sign Up</string>
+    <string name="tim">Timer</string>
+    <string name="GO">Game Over</string>
+    <string name="menu">Menu</string>
+    <string name="logout">LogOut</string>
+    <string name="back">Back</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="load">Loading...</string>
+    <string name="log">Logs</string>
+    <string name="NL">No Logs Yet</string>
+    <string name="NR">No Records Yet</string>
+    <string name="Video">Video</string>
+    <string name="title_activity_video">Video</string>
+    <string name="play">Play</string>
+</resources>
