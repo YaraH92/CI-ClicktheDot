@@ -19,7 +19,6 @@ pipeline{
 				powershell "./gradlew assembleDebug"
 				echo "bbbb"
 			}
-			echo "aaaa"
 		}
 	    
 	    //tell Jenkins to archive the apks
