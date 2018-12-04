@@ -4,7 +4,12 @@ pipeline{
 		// Checkout code from repository and update any submodules
         stage ('Checkout'){
             steps{
-                  checkout scm
+                  checkout([$class: 'GitSCM', 
+				  branches: [[name: '*/master']], 
+				  doGenerateSubmoduleConfigurations: false, 
+				  extensions: [], 
+				  submoduleCfg: [], 
+				  userRemoteConfigs: [[url: 'https://github.com/YaraH92/CI-ClicktheDot.git']]])
             }
         }
 		
