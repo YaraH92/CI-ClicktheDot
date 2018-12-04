@@ -16,8 +16,10 @@ pipeline{
 		//build the app gradle
 		stage ('Build'){
 			steps{
-				"gradlew assembleDebug"
+				powershell "./gradlew assembleDebug"
+				echo "bbbb"
 			}
+			echo "aaaa"
 		}
 	    
 	    //tell Jenkins to archive the apks
