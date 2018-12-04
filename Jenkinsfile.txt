@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    stages {
+		// Checkout code from repository and update any submodules
+        stage ('Checkout'){
+            steps{
+                  checkout scm
+            }
+        }
+		
+		//build the app gradle
+		stage ('Build'){
+			steps{
+				"./gradlew assembleDebug"
+			}
+		}
+		
+		//tell Jenkins to archive the apks
+		stage('Archive'){
+			steps{
+				archiveArtifacts artifacts: 'app/build/outputs/apk/*.apk', fingerprint: true
+			}
+		}
+  		
+    }
+}
